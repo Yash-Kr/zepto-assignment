@@ -2,7 +2,7 @@ import React from "react";
 
 const MenuItem = ({ className = "", onClick, user = {} }) => {
   const getProfileImageUrl = () => {
-    return `/images/p${user.uniqueId}.jpg`;
+    return `images/p${user.uniqueId}.jpg`;
   };
 
   return (
