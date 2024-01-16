@@ -104,6 +104,7 @@ const ChipInputContainer = () => {
       className="flex flex-row gap-4 p-4 flex-wrap border-b-2 border-blue-900 font-secondary"
       onClick={setInputFocus}
     >
+      <h1 className="w-full my-10 text-violet-950 text-2xl text-center font-primary">Pick Users</h1>
       {selectedUsers.map((user, index) => (
         <Chip
           key={user.uniqueId}
@@ -120,6 +121,7 @@ const ChipInputContainer = () => {
           onChange={handleInputChange}
           onFocus={setInputFocus}
           onKeyDown={handleKeyPress}
+          placeholder="Add new user..."
         />
         {showMenuOptions && (
           <MenuList
